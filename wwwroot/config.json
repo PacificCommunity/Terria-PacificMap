@@ -1,7 +1,8 @@
 {
     /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
     initializationUrls: [
-        "terria"
+        "terria",
+        "spc"
     ],
     parameters: {
         googleUrlShortenerKey: null,
@@ -39,12 +40,13 @@
             link: "http://www.example.com"
         },*/
         // This is used in various text messages. You should also set <title> in index.html
-        appName: "Terria Map",
-
+        appName: "Pacific Map",
+        bingMapsKey: "Arl9C4QeTxmC3xSoCFV9t1ja3sGPtoq-Q9YbsL5X75_OaJLw0LamkE_UcCjmWRb3",
+        cesiumIonAccessToken: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI1MjIzNzM5NC1kN2E1LTRkYzMtYjVlNS02ZmU4NThlZjE2ZmYiLCJpZCI6MTE0ODksInNjb3BlcyI6WyJhc3IiLCJnYyJdLCJpYXQiOjE1NTkwODcwNDF9.ueCJqmeEuYIYsRYhGF4DrmdZWp_tKAfI_tcEG-Bn4fE",
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
             "",
-            "<a target=\"_blank\" href=\"https://terria.io\"><img src=\"images/terria_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
+            "<a target=\"_blank\" href=\"https://pacificdata.org\"><img src=\"https://pacificdata.org/sites/default/files/spc_data_hub_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a>",
             ""
         ],
         // Shown when things go wrong.
