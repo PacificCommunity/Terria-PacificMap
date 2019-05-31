@@ -7,6 +7,24 @@
     },
     "services": [],
     "catalog": [
-
+        {
+            "name": "Pacific Hub Datasets",
+            "type": "ckan",
+            "url": "https://pacificdata.org/data",
+            "filterQuery": [{
+              "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
+            }],
+            "groupBy": "organization",
+            "includeCsv": true,
+            "includeGeoJson": true,
+            "includeKml": true,
+            "includeWms": true,
+            "includeWfs": true,
+            "includeEsriMapServer": true,
+            "includeEsriFeatureServer": true,
+            "filterByWmsGetCapabilities": false,
+            "minimumMaxScaleDenominator": 1e10,
+            "wmsParameters": {"tiled" : true}
+        }
     ]
 }
