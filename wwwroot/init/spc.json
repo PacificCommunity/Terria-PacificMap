@@ -25,6 +25,11 @@
             "filterByWmsGetCapabilities": false,
             "minimumMaxScaleDenominator": 1e10,
             "wmsParameters": {"tiled" : true}
+        },
+        {
+            "name": "Marine Pollution",
+            "type": "csv",
+            "url": "https://pacific-data.sprep.org/system/files/ENV_Marine_Pollution_Obs_data_v4.csv"
         }
     ]
 }
