@@ -1,5 +1,5 @@
 {
-  "name": "terriajs-map",
+  "name": "pacific-map",
   "version": "0.0.1",
   "description": "Geospatial catalog explorer based on TerriaJS.",
   "license": "Apache-2.0",
@@ -22,7 +22,7 @@
     "awsEc2ImageId": "ami-0065540df76a93885",
     "awsKeyName": "terria-kring",
     "awsS3ServerConfigOverridePath": "s3://terria-apps/map/privateserverconfig-2016-08-31.json",
-    "awsS3ClientConfigOverridePath": "s3://terria-apps/map/privateclientconfig-2018-11-19.json",
+    "awsS3ClientConfigOverridePath": "s3://terria-apps/map/empty.json",
     "docker": {
       "name": "data61/terria-terriamap",
       "include": "wwwroot node_modules devserverconfig.json index.js package.json version.js"
