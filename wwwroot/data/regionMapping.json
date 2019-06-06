@@ -29,7 +29,7 @@
           "layerName": "SPC_EEC",
           "server": "https://tile-test.terria.io/SPC_EEC/{z}/{x}/{y}.pbf",
           "serverType": "MVT",
-          "serverMaxNativeZoom": 9,
+          "serverMaxNativeZoom": 12,
           "serverMinZoom": 0,
           "serverMaxZoom": 28,
           "regionIdsFile": "build/TerriaJS/data/regionids/region_map-SPC_EEC_NAME_SPC_EEC.json",
