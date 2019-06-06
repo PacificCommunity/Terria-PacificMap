@@ -45,9 +45,10 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
             "",
-            "<a target=\"_blank\" href=\"https://pacificdata.org\"><img class='left' src=\"images/spc_data_hub_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a> <a href='https://data61.csiro.au/' target='_blank'><img class='right' src='images/DATA61_CSIRO.png' alt='Data61' style=\"width: 55px; height: 33px\"/></a>",
+            "<a target=\"_blank\" href=\"https://pacificdata.org\"><img class='left' src=\"images/spc_data_hub_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a> <a href='https://data61.csiro.au/' target='_blank'><img class='right' src='images/DATA61_CSIRO.png' alt='Data61' style=\"margin-left: 20px\"/></a>",
             ""
         ],
+        regionMappingDefinitionsUrl: "data/regionMapping.json",
         // Shown when things go wrong.
         supportEmail: "help@example.com",
         // You probably shouldn't change this.

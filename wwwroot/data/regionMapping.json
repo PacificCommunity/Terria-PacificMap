@@ -8,7 +8,7 @@
           "serverMaxNativeZoom": 12,
           "serverMinZoom": 0,
           "serverMaxZoom": 28,
-          "regionIdsFile": "build/TerriaJS/data/regionids/region_map-SPC_EEC_CODE_SPC_EEC.json",
+          "regionIdsFile": "/data/regionids/region_map-SPC_EEC_CODE_SPC_EEC.json",
           "regionProp": "country_id",
           "nameProp": "country_name",
           "aliases": [
@@ -19,7 +19,7 @@
           ],
           "description": "SPC EEC by code",
           "bbox": [
-             -179.9975,
+            -179.9975,
             -30.930209,
             179.992727,
             23.774728
@@ -32,7 +32,7 @@
           "serverMaxNativeZoom": 12,
           "serverMinZoom": 0,
           "serverMaxZoom": 28,
-          "regionIdsFile": "build/TerriaJS/data/regionids/region_map-SPC_EEC_NAME_SPC_EEC.json",
+          "regionIdsFile": "/data/regionids/region_map-SPC_EEC_NAME_SPC_EEC.json",
           "regionProp": "country",
           "nameProp": "country",
           "aliases": [
@@ -47,7 +47,7 @@
           ],
           "description": "SPC EEC by name",
           "bbox": [
-               -179.9975,
+            -179.9975,
             -30.930209,
             179.992727,
             23.774728
