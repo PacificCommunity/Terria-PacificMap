@@ -5,7 +5,7 @@
           "layerName": "SPC_EEC",
           "server": "https://tile-test.terria.io/SPC_EEC/{z}/{x}/{y}.pbf",
           "serverType": "MVT",
-          "serverMaxNativeZoom": 9,
+          "serverMaxNativeZoom": 12,
           "serverMinZoom": 0,
           "serverMaxZoom": 28,
           "regionIdsFile": "build/TerriaJS/data/regionids/region_map-SPC_EEC_CODE_SPC_EEC.json",
@@ -14,7 +14,8 @@
           "aliases": [
             "co_id",
             "CO_ID",
-            "COUNTRY_ID"
+            "COUNTRY_ID",
+            "SPC_COUNTRY_ID"
           ],
           "description": "SPC EEC by code",
           "bbox": [
@@ -40,7 +41,9 @@
             "country_name",
             "COUNTRY_NAME",
             "COUNTRY",
-            "Countries"
+            "Countries",
+            "SPC_COUNTRY",
+            "SPC_COUNTRY_NAME"
           ],
           "description": "SPC EEC by name",
           "bbox": [
