@@ -65,7 +65,7 @@ body {
             font-family: $font-base; 
         }
         &:hover { 
-            color: $color-primary;             
+            color: white;
         }
     }
 
@@ -150,6 +150,27 @@ body {
     }
     .tjs-tabs__btn--tab:hover {    
         color:$color-secondary;
+    }
+
+    // Pacific Map specific CSS
+    .tjs-tabs__tab-panel, .tjs-feedback-button__feedback {
+        .tjs-_buttons__btn {
+            &:hover { 
+                color: $color-primary;
+            }
+        }        
+    }
+
+    .tjs-tabs__tabs {
+        .tjs-mappable-preview__btn--add, .tjs-data-catalog-group__btn--catalog {
+            &:hover { 
+                color: white;
+            }
+        }
+    }
+
+    .tjs-progress-bar__progress-bar {
+        display: none;
     }
 
 }
