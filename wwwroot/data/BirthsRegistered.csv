@@ -1,0 +1,12 @@
+SPC_COUNTRY_ID,SDG_UNIT_MEASURE,TIME_PERIOD,OBS_VALUE,REPORTING_TYPE,NATURE,SOURCE_DETAIL
+CK,RATIO,2016,100,N,C,"Cook Islands, Registry Office and Ministry of Health."
+KI,RATIO,2009,93.5,N,C,"Kiribati National Statistics Office, 2009 DHS."
+MH,RATIO,2007,95.9,N,C,"Marshall Islands, 2007 DHS"
+NR,RATIO,2007,82.6,N,C,"Nauru Bureau Statistics, DHS 2007."
+NC,RATIO,2018,100,N,C,"Nouvelle-Caledonie. Institut des Statistiques et des Etudes Economiques, Demographie"
+NU,RATIO,2017,100,N,C,Niue Vital Statistics Report 2012-16
+PW,RATIO,2017,90,N,C,"Palau Government, Age 0-2 years (based on three year average of registrations divided by estimated births in same period)."
+WS,RATIO,2014,58.6,N,C,Samoa Bureau of Statistics - Samoa  Demographic and Health Survey 2014
+TO,RATIO,2016,96,N,C,"Tonga NSO, Census of Population and Housing 2016."
+TV,RATIO,2016,88,N,C,"Tuvalu NSO, 2017 Mini Census. 2012-16"
+VU,RATIO,2016,77.1,N,C,"Vanuatu NSO, 2016 Mini Census."

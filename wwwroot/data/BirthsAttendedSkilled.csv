@@ -1,0 +1,17 @@
+SPC_COUNTRY_ID,TIME_PERIOD,OBS_VALUE,REPORTING_TYPE,NATURE,SDG_UNIT_MEASURE,SOURCE_DETAIL
+CK,2009,100,N,C,RATIO,Cook Islands MDG Report.
+FM,2009,100,N,C,RATIO,"FSM Office of Statistics, Budget and Economic Management."
+FJ,2016,99,N,C,RATIO,"Fiji Ministry of Health, Annual Report 2015 (2016)."
+PF,2010,97.6,N,C,RATIO,"Polynesie francaise. Direction de la Sante, enquete mortalite"
+KI,2012,86.8,N,C,RATIO,Kiribati National Progress Report
+MH,2017,92,G,C,RATIO,"Annual Report FY 2011. Ministry of Health, Republic of the Marshall Islands, 2012."
+NR,2007,97.4,N,C,RATIO,"Nauru Bureau Statistics, DHS 2007."
+NC,2014,98.2,N,C,RATIO,Nouvelle-Caledonie. R?seau Perinatalite
+NU,2011,100,R,C,RATIO,SPC-NMDI
+PW,2016,100,N,C,RATIO,2016 Statistical Yearbook. Koror
+PG,2016,40,N,C,RATIO,"2016 Sector Performance Annual Review. Assessment of Sector Performance 2012-16. Ministry of Health Papua New Guinea, 2017."
+WS,2015,82.5,N,C,RATIO,Samoa Bureau of Statistics -  Samoa  Demographic and Health Survey 2014.
+SB,2015,86.5,N,C,RATIO,Solomon Islands 2015 DHS Survey
+TO,2012,95.5,N,C,RATIO,"Tonga NSO, Demographic Health Survey 2012."
+TV,2007,97.9,N,C,RATIO,Ministry of Health cited in Tuvalu - The Status of Health 2010.
+VU,2013,89.4,N,C,RATIO,"Vanuatu NSO, Demographic and Health Survey 2013. (2014)"

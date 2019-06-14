@@ -59,13 +59,21 @@ body {
         background:$dark-darker;
     }
 
+    .tjs-tabs__tab-panel {
+        .tjs-_buttons__btn {
+            &:hover { 
+                color: $color-primary;
+            }
+        }        
+    }
+
     // All kinds of buttons in various screens
     .tjs-_buttons__btn {
         &-primary { 
             font-family: $font-base; 
         }
         &:hover { 
-            color: white;             
+            color: white;
         }
     }
 

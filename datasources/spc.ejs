@@ -27,6 +27,62 @@
             "wmsParameters": {"tiled" : true}
         },
         {
+          "name": "Sustainable Development Goals",
+          "type": "group",
+          "isOpen": true,
+          "items": [
+                {
+                  "name": "3.1.1. Maternal Mortality Ratio",
+                  "type": "csv",
+                  "url": "/data/MaternalMortalityRatio.csv",
+                  "isCsvForCharting": false,
+                  <% include spc/sdg_table_style %>
+                },
+                {
+                  "name": "3.1.2 Births attended by skilled health personnel Ratio",
+                  "type": "csv",
+                  "url": "/data/BirthsAttendedSkilled.csv",
+                  "isCsvForCharting": false,
+                  <% include spc/sdg_table_style %>
+                },
+                {
+                  "name": "3.3.2 Tuberculosis incidence Ratio",
+                  "type": "csv",
+                  "url": "/data/TbIncidence.csv",
+                  "isCsvForCharting": false,
+                  <% include spc/sdg_table_style %>
+                },
+                {
+                  "name": "3.d.1 International Health Regulations (IHR) core capacity index",
+                  "type": "csv",
+                  "url": "/data/IhrCapacity.csv",
+                  "isCsvForCharting": false,
+                  <% include spc/sdg_table_style %>
+                },
+                {
+                  "name": "15.1.1 Land area covered by forest",
+                  "type": "csv",
+                  "url": "/data/ForestCover.csv",
+                  "isCsvForCharting": false,
+                  <% include spc/sdg_table_style %>
+                },
+                {
+                  "name": "15.5.1 Red List Index",
+                  "type": "csv",
+                  "url": "/data/RedListIndex.csv",
+                  "isCsvForCharting": false,
+                  <% include spc/sdg_table_style %>
+                },
+                {
+                  "name": "16.9.1 Proportion of births registered with a civil authority",
+                  "type": "csv",
+                  "url": "/data/BirthsRegistered.csv",
+                  "isCsvForCharting": false,
+                  <% include spc/sdg_table_style %>
+                }
+            ]
+        },
+        {
             "name": "Marine Pollution",
             "type": "csv",
             "url": "https://pacific-data.sprep.org/system/files/ENV_Marine_Pollution_Obs_data_v4.csv"

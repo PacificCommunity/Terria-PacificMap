@@ -23,7 +23,8 @@
         "gov.nz",
         "sample.aero3dpro.com.au",
         "pacificdata.org",
-        "sprep.org"
+        "sprep.org",
+        "pacgeo.org"
     ],
     "feedback": {
         "userAgent": "TerriaBot (TerriaJS Feedback)",

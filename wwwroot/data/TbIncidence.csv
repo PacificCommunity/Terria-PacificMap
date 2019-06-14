@@ -1,0 +1,17 @@
+SPC_COUNTRY_ID,SDG_UNIT_MEASURE,TIME_PERIOD,OBS_VALUE,REPORTING_TYPE,NATURE,SOURCE_DETAIL
+CK,PER_100000_POP,2016,11,G,E,WHO Global Tuberculosis Report 2017
+FM,PER_100000_POP,2015,177,G,E,WHO Global Tuberculosis Report 2017
+FJ,PER_100000_POP,2015,51,G,C,"UN Global Database, confidence intervals (39,64)"
+PF,PER_100000_POP,2016,20,G,E,WHO Global Tuberculosis Report 2017
+KI,PER_100000_POP,2016,566,G,E,WHO Global Tuberculosis Report 2017
+MH,PER_100000_POP,2017,372,G,E,WHO Global Tuberculosis Report 2017
+NR,PER_100000_POP,2016,112,G,E,WHO Global Tuberculosis Report 2017
+NC,PER_100000_POP,2016,16,G,E,WHO Global Tuberculosis Report 2017
+NU,PER_100000_POP,2016,20,G,C,UN Global Database
+PW,PER_100000_POP,2016,123,G,E,WHO Global Tuberculosis Report 2017
+PG,PER_100000_POP,2015,347,G,E,WHO Global Tuberculosis Report 2017
+WS,PER_100000_POP,2015,11,G,E,Samoa Ministry of Health - Health Facility Report (TB Clinic)
+SB,PER_100000_POP,2016,84,G,C,"WHO Global Tuberculosis Report 2017, confidence intervals (64,106)"
+TO,PER_100000_POP,2015,15,G,E,WHO Global Tuberculosis Report 2017
+TV,PER_100000_POP,2016,207,G,E,"WHO Global Tuberculosis Report 2017, confidence intervals (199,267)"
+VU,PER_100000_POP,2016,56,G,E,"WHO Global Tuberculosis Report 2017, confidence intervals (52,74)"
