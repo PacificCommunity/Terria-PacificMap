@@ -5,7 +5,7 @@
     ],
     parameters: {
         googleUrlShortenerKey: null,
-        googleAnalyticsKey: null,
+        googleAnalyticsKey: "UA-142228344-1",
         googleAnalyticsOptions: null,
         /* Text that appears at the bottom of the map */
         disclaimer: {
