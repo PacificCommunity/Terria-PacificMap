@@ -33,7 +33,7 @@
     {
       "name": "Sustainable Development Goals",
       "type": "group",
-      "isOpen": true,
+      "isOpen": false,
       "items": [
         {
           "name": "3.1.1. Maternal Mortality Ratio",
