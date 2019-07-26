@@ -45,7 +45,7 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
             "",
-            "<a target=\"_blank\" href=\"https://pacificdata.org\"><img class='left' style=\"width:270px; padding-top: 20px; padding-left: 5px\" src=\"images/pacificBetaLogo.svg\" title=\"Version: {{version}}\" /></a> <a target=\"_blank\" href=\"https://data61.csiro.au/\"><img class='right' style=\"width:50px; padding-top: 20px; padding-left: 5px\" src=\"images/data61-csiro.svg\" /></a>",
+            "<a target=\"_blank\" href=\"https://pacificdata.org\"><img class='left' style=\"width:270px; padding-top: 20px; padding-left: 5px\" src=\"images/pacificStagingLogo.svg\" title=\"Version: {{version}}\" /></a> <a target=\"_blank\" href=\"https://data61.csiro.au/\"><img class='right' style=\"width:50px; padding-top: 20px; padding-left: 5px\" src=\"images/data61-csiro.svg\" /></a>",
             ""
         ],
         regionMappingDefinitionsUrl: "data/regionMapping.json",

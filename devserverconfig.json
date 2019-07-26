@@ -30,6 +30,10 @@
         "userAgent": "TerriaBot (TerriaJS Feedback)",
         "issuesUrl": "https://api.github.com/repos/PacificCommunity/Terria-PacificMap/issues",
         "accessToken": null
+    },
+    "basicAuthentication": {
+        "username": "spc",
+        "password": "proof of concept"
     }
 }
 

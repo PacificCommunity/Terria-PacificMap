@@ -216,6 +216,43 @@
       "name": "Marine Pollution",
       "type": "csv",
       "url": "https://pacific-data.sprep.org/system/files/ENV_Marine_Pollution_Obs_data_v4.csv"
+    },
+    {
+      "name": "Staging Data",
+      "type": "group",
+      "isOpen": false,
+      "items": [
+        {
+          "id": "GovExp-SDMX",
+          "name": "Government Expenditure Data (SDMX)",
+          "type": "sdmx-json",
+          "sdmxVersionNumber": 2.1,
+          "url": "https://stats.pacificdata.org/data-nsi/Rest/data/SPC,DF_POCKET,1.0/GOV_EXP.A../",
+          "measureDimensionId": "SPC_UNIT_MEASURE",
+          "regionNameTemplate": "SPC_EEC_CODE",
+          "regionType": "SPC_COUNTRY_ID",
+          "regionDimensionId": "SPC_AREA"
+        },
+        {
+          "id": "PocketSummary-SDMX",
+          "name": "Pocket Summary - SDMX",
+          "type": "sdmx-json",
+          "sdmxVersionNumber": 2.1,
+          "url": "https://stats.pacificdata.org/data-nsi/Rest/data/SPC,DF_POCKET,1.0",
+          "regionNameTemplate": "SPC_EEC_CODE",
+          "regionType": "SPC_COUNTRY_ID",
+          "regionDimensionId": "SPC_AREA",
+          "measureDimensionId": "SPC_UNIT_MEASURE",
+          "forceShowDimensionIds": [
+            "POCKET",
+            "SPC_UNIT_MEASURE"
+          ],
+          "singleValuedDimensionIds": [
+            "POCKET",
+            "SPC_UNIT_MEASURE"
+          ]
+        }
+      ]
     }
   ]
 }
