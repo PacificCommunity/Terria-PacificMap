@@ -5,7 +5,7 @@
     ],
     parameters: {
         googleUrlShortenerKey: null,
-        googleAnalyticsKey: null,
+        googleAnalyticsKey: "UA-142228344-1",
         googleAnalyticsOptions: null,
         /* Text that appears at the bottom of the map */
         disclaimer: {
@@ -45,12 +45,12 @@
         // See comments in lib/Views/global.scss for further information about customising colors, logos, fonts etc.
         brandBarElements: [
             "",
-            "<a target=\"_blank\" href=\"https://pacificdata.org\"><img class='left' src=\"images/spc_data_hub_logo.png\" height=\"52\" title=\"Version: {{version}}\" /></a> <a href='https://data61.csiro.au/' target='_blank'><img class='right' src='images/DATA61_CSIRO.png' alt='Data61' style=\"width: 65px; height: 40px; margin-left: 40px; margin-bottom: 6px;\"/></a>",
+            "<a target=\"_blank\" href=\"https://pacificdata.org\"><img class='left' style=\"width:270px; padding-top: 20px; padding-left: 5px\" src=\"images/pacificBetaLogo.svg\" title=\"Version: {{version}}\" /></a> <a target=\"_blank\" href=\"https://data61.csiro.au/\"><img class='right' style=\"width:50px; padding-top: 20px; padding-left: 5px\" src=\"images/data61-csiro.svg\" /></a>",
             ""
         ],
         regionMappingDefinitionsUrl: "data/regionMapping.json",
         // Shown when things go wrong.
-        supportEmail: "spc@terria.io",
+        supportEmail: "datahub@spc.int",
         // You probably shouldn't change this.
         proj4ServiceBaseUrl: "proj4def/",
         // Or this

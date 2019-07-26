@@ -6919,9 +6919,9 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-"pell@git://github.com/TerriaJS/pell#master":
+"pell@git://github.com/TerriaJS/pell.git#master":
   version "1.0.6"
-  resolved "git://github.com/TerriaJS/pell#7cd23a55cdfd130fedf3679433991bb7d958fc42"
+  resolved "git://github.com/TerriaJS/pell.git#7cd23a55cdfd130fedf3679433991bb7d958fc42"
 
 performance-now@^2.1.0:
   version "2.1.0"
@@ -9039,10 +9039,10 @@ terriajs-catalog-editor@^0.2.0:
   resolved "https://registry.yarnpkg.com/terriajs-catalog-editor/-/terriajs-catalog-editor-0.2.0.tgz#d9c6679e53c4d92e87a531af896c6148888ed8e4"
   integrity sha1-2cZnnlPE2S6HpTGviWxhSIiO2OQ=
 
-terriajs-cesium@1.57.2:
-  version "1.57.2"
-  resolved "https://registry.yarnpkg.com/terriajs-cesium/-/terriajs-cesium-1.57.2.tgz#519117a24c422c7d15e34b12b4798563f5e35ff5"
-  integrity sha512-dDZ0u7SpcX3I6hpwPHnEq8nNmW8jLiCD4NThUsLaH6M+ILHmPBX1uU6S46a1DJxkzP98r/rJsnh9rchhGTXh5w==
+terriajs-cesium@1.58.1:
+  version "1.58.1"
+  resolved "https://registry.yarnpkg.com/terriajs-cesium/-/terriajs-cesium-1.58.1.tgz#ab3d121f2406fcbf0804fcfdc9c967661a7cb0fe"
+  integrity sha512-aq41DFz9m7m3gKUb3H+T2pmC3FU45GkwbH2meiTKwO9aQh8nT2DXDfeSGDEs0ORqq4+A5SV3G/qAqlU/cgq02A==
   dependencies:
     deamdify "^0.1.1"
     dompurify "^1.0.2"
@@ -9075,10 +9075,10 @@ terriajs-schema@latest:
     when "^3.7.7"
     yargs "^3.32.0"
 
-terriajs-server@^3.0.0:
-  version "3.0.0"
-  resolved "https://registry.yarnpkg.com/terriajs-server/-/terriajs-server-3.0.0.tgz#10ce45257e90f74dcf53fb15c4e45067b289a447"
-  integrity sha512-4yuPEyxp7ZPKjULC7SX4jM3rP74ZKbOxIx5w3TATqNuSG7toBERl+5cE3Ut2GcwolJCQxpJAejzymU4B6VQyXQ==
+terriajs-server@^3.0.1:
+  version "3.0.1"
+  resolved "https://registry.yarnpkg.com/terriajs-server/-/terriajs-server-3.0.1.tgz#37cb4523169019120cdf37c96188f67acca3db6f"
+  integrity sha512-OP0KPSOl2VJGcxGcnJR5/24eCQqpf4EehiCeRc1CWhWYt1aHNgrzyASFyHBJJB0uovNt6+9z5ObxAt247CsVfw==
   dependencies:
     aws-sdk "^2.456.0"
     base-x "^3.0.5"
@@ -9101,9 +9101,10 @@ terriajs-server@^3.0.0:
     when "^3.7.7"
     yargs "^13.2.4"
 
-terriajs@TerriaJS/terriajs#region-mapping-antimeridian:
-  version "7.5.1"
-  resolved "https://codeload.github.com/TerriaJS/terriajs/tar.gz/47a9790ccc60f65d3252284b06958e433a43fcdb"
+terriajs@^7.6.6:
+  version "7.6.6"
+  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-7.6.6.tgz#0b088898973da0f8ac3892db9b994d413398854d"
+  integrity sha512-EK9/MV3BT151llguYwt/zHNvbQch/0ZMzhprr0RacgRNP6E1/k66jpObxkkIsiFTNQhdkZ/PWE6bJczOHAqWRg==
   dependencies:
     "@babel/core" "^7.3.3"
     "@babel/plugin-transform-modules-commonjs" "^7.2.0"
@@ -9170,7 +9171,7 @@ terriajs@TerriaJS/terriajs#region-mapping-antimeridian:
     string-replace-webpack-plugin "^0.1.3"
     style-loader "^0.23.1"
     svg-sprite-loader "4.1.3"
-    terriajs-cesium "1.57.2"
+    terriajs-cesium "1.58.1"
     terriajs-html2canvas "1.0.0-alpha.12-terriajs-1"
     urijs "^1.18.12"
     url-loader "^1.1.2"
