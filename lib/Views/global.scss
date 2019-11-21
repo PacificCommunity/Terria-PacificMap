@@ -75,6 +75,10 @@ body {
         &:focus, &:hover { color: white; }
     }
 
+    .tjs-share-panel__btn--catalogShare svg {
+        fill: white;
+    }
+
     // Lat/lon buttons
     .tjs-legend__locationBar, .tjs-legend__distanceLegend {
         

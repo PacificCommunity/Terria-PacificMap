@@ -13,7 +13,7 @@
       "url": "https://pacificdata.org/data",
       "filterQuery": [
         {
-          "fq": "+(res_format:(geojson OR GeoJSON OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
+          "fq": "+(res_format:(geojson OR GeoJSON OR CSV-GEO-PACIFIC OR csv-geo-pacific OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
         }
       ],
       "groupBy": "organization",

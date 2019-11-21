@@ -322,8 +322,8 @@
                   ],
                   "Effect": "Allow",
                   "Resource": [
-                    "arn:aws:s3:::terriamap-sharing",
-                    "arn:aws:s3:::terriamap-sharing/*"
+                    "arn:aws:s3:::pacificmap-sharing",
+                    "arn:aws:s3:::pacificmap-sharing/*"
                   ]
                 }
               ]
