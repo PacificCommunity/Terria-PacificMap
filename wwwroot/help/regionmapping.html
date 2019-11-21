@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>PacificMap - Region Mapping</title>
+
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">
+            <img alt="Brand" src="../images/spc_data_hub_logo.png">
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="../about.html">About PacificMap</a></li>
+            <li><a href="help.html">Help & FAQ</a></li>
+            <li class="active"><a href="regionmapping.html">Region Mapping</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+            <li><a href="/" target="blank">Launch PacificMap</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container content">
+      <div class="row">
+        <nav class="side-nav navbar-right col-md-3 col-md-offset-1">
+          <div data-spy="affix">
+            <h4 class="nav-header">How to...</h4>
+            <ul class="how-to">
+              <li><a href="regionmapping.html#what-is-region-mapping">What is region mapping?</a></li>
+              <li><a href="regionmapping.html#csv-geo-pacific">What is csv-geo-pacific?</a></li>
+              <li><a href="regionmapping.html#how-do-i-use-it">How do I use it?</a></li>
+              <li><a href="regionmapping.html#what-regions">What regions are available?</a></li>
+            </ul>
+
+            <h4 class="nav-header">Exclusive Economic Zone boundaries</h4>
+            <ul class="how-to">
+              <li><a href="regionmapping.html#what-eez">What boundaries are included?</a></li>
+              <li><a href="regionmapping.html#how-eez"> How do I map my data to these regions?</a></li>
+            </ul>
+
+            <h4 class="nav-header">Sub-Country Boundaries Level 1</h4>
+            <ul class="how-to">
+              <li><a href="regionmapping.html#what-sc1">What boundaries are included?</a></li>
+              <li><a href="regionmapping.html#how-sc1"> How do I map my data to these regions?</a></li>
+            </ul>
+
+            <h4 class="nav-header">Sub-Country Boundaries Level 2</h4>
+            <ul class="how-to">
+              <li><a href="regionmapping.html#what-sc2">What boundaries are included?</a></li>
+              <li><a href="regionmapping.html#how-sc2"> How do I map my data to these regions?</a></li>
+            </ul>
+
+            <h4 class="nav-header">Sub-Country Boundaries Level 3</h4>
+            <ul class="how-to">
+              <li><a href="regionmapping.html#what-sc3">What boundaries are included?</a></li>
+              <li><a href="regionmapping.html#how-sc3">What codes can I use</a></li>
+            </ul>
+
+          </div>
+
+        </nav>
+
+
+        <div class="col-md-8">
+
+          <h1>Region Mapping</h1>
+
+          <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <h2>How to...</h2>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-controls="collapseOne" id="what-is-region-mapping">
+                    What is region mapping?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                  <p>Region mapping is a technique to display data which has a geographic relationship, but does not contain the geographic definition.</p>
+                  <p>For example, if we have a spreadsheet containing population data of countries. The spreadsheet doesn't contain the geographic boundaries, but because they are already known to PacificMap we can display the population data on the a map.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwo">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" id="csv-geo-pacific">
+                    What is csv-geo-pacific?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+                <div class="panel-body">
+                  <p><strong>csv-geo-pacific</strong> is just the formal name given to the region mapping data specification that PacificMap uses. It defines what layers are available and how users can align their data to those layers.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingThree">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree" id="how-do-i-use-it">
+                    How do I use it?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                <div class="panel-body">
+                  <p>The key thing for working with region mapping is having a well-structured csv file. To be able to visualise the data the csv must contain a column header which PacificMap and the csv-geo-pacific specification understand.</p>
+                  <p>For example if you had population data for Districts in American Samoa you could include the <strong>ASM_DISTRICT_CODE</strong> column header to display it on PacificMap.</p>
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th title="Field #1">ASM_DISTRICT_CODE</th>
+                        <th title="Field #2">District</th>
+                        <th title="Field #3">Population</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>ASM-1</td>
+                        <td>Eastern</td>
+                        <td>23,441</td>
+                      </tr>
+                      <tr>
+                        <td>ASM-2</td>
+                        <td>Manu&#39;a </td>
+                        <td>1,143</td>
+                      </tr>
+                      <tr>
+                        <td>ASM-3 </td>
+                        <td>Unorganized</td>
+                        <td>17</td>
+                      </tr>
+                      <tr>
+                        <td>ASM-4</td>
+                        <td>Western</td>
+                        <td>32,435</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <p>To visualise the data you can then drag-and-drop the CSV onto PacificMap.</p>
+                  <p>PacificMap will warn you if you if it it unable to visualise your CSV.</p>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFour">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour" id="what-regions">
+                    What regions and boundaries are available?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+                <div class="panel-body">
+
+                  <p>So far we've configured PacificMap to support to the following region data</p>
+                  <ul>
+                    <li>Exclusive economic zone (eez) boundaries</li>
+                    <li>Sub-Country boundaries Level 1</li>
+                    <li>Sub-Country boundaries Level 2</li>
+                    <li>Sub-Country boundaries Level 3</li>
+                  </ul>
+                  <br/>
+                  <p>The Sub-Country layers are an amalgamation of boundaries that approximately equivalent across countries.</p>
+
+                  <table class="table">
+                    <thead>
+                      <tr>
+                        <th style="width: 5%;">Code</th>
+                        <th style="width: 15%;">County</th>
+                        <th style="width: 17%;">Sub-Country Level 1</th>
+                        <th style="width: 17%;">Sub-Country Level 2</th>
+                        <th style="width: 17%;">Sub-Country Level 3</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>ASM</td>
+                        <td>American Samoa</td>
+                        <td>District</td>
+                        <td>County</td>
+                        <td>Village</td>
+                      </tr>
+                      <tr>
+                        <td>COK</td>
+                        <td>Cook Islands</td>
+                        <td>Group of Islands</td>
+                        <td>Island</td>
+                        <td>Census District</td>
+                      </tr>
+                      <tr>
+                        <td>FJI</td>
+                        <td>Fiji</td>
+                        <td>Division</td>
+                        <td>Province</td>
+                        <td>Tikina</td>
+                      </tr>
+                      <tr>
+                        <td>FSM</td>
+                        <td>Federated States of Micronesia</td>
+                        <td>State</td>
+                        <td> </td>
+                        <td>Municipality</td>
+                      </tr>
+                      <tr>
+                        <td>GUM</td>
+                        <td>Guam</td>
+                        <td> </td>
+                        <td> </td>
+                        <td>Municipality/District</td>
+                      </tr>
+                      <tr>
+                        <td>KIR</td>
+                        <td>Kiribati</td>
+                        <td>Group of Islands</td>
+                        <td>Island</td>
+                        <td>Village</td>
+                      </tr>
+                      <tr>
+                        <td>MHL</td>
+                        <td>Marshall Islands</td>
+                        <td> </td>
+                        <td> </td>
+                        <td>Atoll</td>
+                      </tr>
+                      <tr>
+                        <td>MNP</td>
+                        <td>Northern Mariana Islands</td>
+                        <td>Island</td>
+                        <td> </td>
+                        <td>Village</td>
+                      </tr>
+                      <tr>
+                        <td>NCL</td>
+                        <td>New Caledonia</td>
+                        <td>Province</td>
+                        <td> </td>
+                        <td>Commune</td>
+                      </tr>
+                      <tr>
+                        <td>NIU</td>
+                        <td>Niue</td>
+                        <td> </td>
+                        <td> </td>
+                        <td>Village</td>
+                      </tr>
+                      <tr>
+                        <td>NRU</td>
+                        <td>Nauru</td>
+                        <td> </td>
+                        <td> </td>
+                        <td>District</td>
+                      </tr>
+                      <tr>
+                        <td>PCN</td>
+                        <td>Pitcairn</td>
+                        <td> </td>
+                        <td> </td>
+                        <td> </td>
+                      </tr>
+                      <tr>
+                        <td>PLW</td>
+                        <td>Palau</td>
+                        <td>Group of States</td>
+                        <td>State</td>
+                        <td>Hamlet</td>
+                      </tr>
+                      <tr>
+                        <td>PNG</td>
+                        <td>Papua New Guinea</td>
+                        <td>Province</td>
+                        <td>District</td>
+                        <td>Local Level Goverment Area</td>
+                      </tr>
+                      <tr>
+                        <td>PYF</td>
+                        <td>French Polynesia</td>
+                        <td>Administrative subdivisions</td>
+                        <td>Communes</td>
+                        <td>Associated communes</td>
+                      </tr>
+                      <tr>
+                        <td>SLB</td>
+                        <td>Solomons</td>
+                        <td>Province</td>
+                        <td>Constituency</td>
+                        <td>Ward</td>
+                      </tr>
+                      <tr>
+                        <td>TKL</td>
+                        <td>Tokelau</td>
+                        <td> </td>
+                        <td> </td>
+                        <td>Atoll</td>
+                      </tr>
+                      <tr>
+                        <td>TON</td>
+                        <td>Tonga</td>
+                        <td>Division</td>
+                        <td>District</td>
+                        <td>Village</td>
+                      </tr>
+                      <tr>
+                        <td>TUV</td>
+                        <td>Tuvalu</td>
+                        <td>Island</td>
+                        <td> </td>
+                        <td>Village</td>
+                      </tr>
+                      <tr>
+                        <td>VUT</td>
+                        <td>Vanuatu</td>
+                        <td>Province</td>
+                        <td>Island</td>
+                        <td>Area Council</td>
+                      </tr>
+                      <tr>
+                        <td>WLF</td>
+                        <td>Wallis and Futuna</td>
+                        <td>District</td>
+                        <td> </td>
+                        <td>Village</td>
+                      </tr>
+                      <tr>
+                        <td>WSM</td>
+                        <td>Samoa</td>
+                        <td>Region</td>
+                        <td> </td>
+                        <td>District</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+
+            <h2>Exclusive Economic Zone boundaries</h2>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingFive">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive" id="what-eez">
+                    What boundaries are included?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+                <div class="panel-body">
+                  <p>The Exclusive Economic Zone boundary set provides a layer showing countries expanded by 200 nautical miles from their coast. This layer is helpful for representing countries in the Pacific which often have a small landmass.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingSix">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSix" aria-expanded="false" aria-controls="collapseSix" id="how-eez">
+                    What codes can I use?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSix" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSix">
+                <div class="panel-body">
+                  <ul>
+                    <li>EEZ's can be mapped using a <strong>country code</strong></li>
+                      <ul>
+                        <li>One of the following headers is required: co_id, CO_ID, COUNTRY_ID, SPC_COUNTRY_ID, SPC_AREA</li>
+                        <li>Valid values for the codes are ISO2 country codes, eg "AS" for American Samoa</li>
+                      </ul>
+                    <li>EEZ's can be mapped using a <strong>country name</strong>.</li>
+                      <ul>
+                        <li>One of the following headers is required: coname, CO_NAME, country_name, COUNTRY_NAME, COUNTRY, Countries, SPC_COUNTRY, SPC_COUNTRY_NAME</li>
+                        <li>Using country names is a less prefered option compared to using country codes as they are trickier to get align consistently to the specification.</li>
+                      </ul>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+
+            <h2>Sub-Country Boundaries Level 1</h2>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingSeven">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven" id="what-sc1">
+                    What boundaries are included?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseSeven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingSeven">
+                <div class="panel-body">
+                  <p>The Sub-Country Boundaries Level 1 set provides an amalgamation of administrative boundaries that are approximately equivalent across countries.</p>
+                  <p>Countries across the Pacific use different administrative boundary structures and so there is no single consistent way to aggregate the information.</p>
+                  <p>Below is a list of the administrative boundaries available through this layer.</p>
+                  <a href="https://github.com/PacificCommunity/csv-geo-pacific/blob/master/documentation/subCountry1/Values.md" taraget="_blank"><button type="button" class="btn btn-default">Check valid values for regions</button></a>
+                  <button type="button" class="btn btn-primary" onclick="saveThisFile('https://raw.githubusercontent.com/PacificCommunity/csv-geo-pacific/master/documentation/subCountry1/sample.csv')">Download a sample CSV</button>
+                  <table id="LevelOfDetailSubCountry1" class="table">
+                    <thead>
+                        <tr>
+                            <th>ISO3 Code</th>
+                            <th>Country</th>
+                            <th>Boundary type</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td align="left">ASM</td>
+                            <td align="left">American Samoa</td>
+                            <td align="left">District</td>
+                        </tr>
+                        <tr>
+                            <td align="left">COK</td>
+                            <td align="left">Cook Islands</td>
+                            <td align="left">Group of Islands</td>
+                        </tr>
+                        <tr>
+                            <td align="left">FJI</td>
+                            <td align="left">Fiji</td>
+                            <td align="left">Division</td>
+                        </tr>
+                        <tr>
+                            <td align="left">PYF</td>
+                            <td align="left">French Polynesia</td>
+                            <td align="left">Administrative subdivisions</td>
+                        </tr>
+                        <tr>
+                            <td align="left">GUM</td>
+                            <td align="left">Guam</td>
+                            <td align="left">N/A</td>
+                        </tr>
+                        <tr>
+                            <td align="left">KIR</td>
+                            <td align="left">Kiribati</td>
+                            <td align="left">N/A</td>
+                        </tr>
+                        <tr>
+                            <td align="left">MHL</td>
+                            <td align="left">Marshall Islands</td>
+                            <td align="left">N/A</td>
+                        </tr>
+                        <tr>
+                            <td align="left">FSM</td>
+                            <td align="left">Federated States of Micronesia</td>
+                            <td align="left">State</td>
+                        </tr>
+                        <tr>
+                            <td align="left">NRU</td>
+                            <td align="left">Nauru</td>
+                            <td align="left">N/A</td>
+                        </tr>
+                        <tr>
+                            <td align="left">NCL</td>
+                            <td align="left">New Caledonia</td>
+                            <td align="left">Province</td>
+                        </tr>
+                        <tr>
+                            <td align="left">NIU</td>
+                            <td align="left">Niue</td>
+                            <td align="left">N/A</td>
+                        </tr>
+                        <tr>
+                            <td align="left">MNP</td>
+                            <td align="left">Northern Mariana Islands</td>
+                            <td align="left">Island</td>
+                        </tr>
+                        <tr>
+                            <td align="left">PLW</td>
+                            <td align="left">Palau</td>
+                            <td align="left">Group of States</td>
+                        </tr>
+                        <tr>
+                            <td align="left">PNG</td>
+                            <td align="left">Papua New Guinea</td>
+                            <td align="left">Province</td>
+                        </tr>
+                        <tr>
+                            <td align="left">WSM</td>
+                            <td align="left">Samoa</td>
+                            <td align="left">Region</td>
+                        </tr>
+                        <tr>
+                            <td align="left">SLB</td>
+                            <td align="left">Solomon Islands</td>
+                            <td align="left">Province</td>
+                        </tr>
+                        <tr>
+                            <td align="left">TKL</td>
+                            <td align="left">Tokelau</td>
+                            <td align="left">N/A</td>
+                        </tr>
+                        <tr>
+                            <td align="left">TON</td>
+                            <td align="left">Tonga</td>
+                            <td align="left">Division</td>
+                        </tr>
+                        <tr>
+                            <td align="left">TUV</td>
+                            <td align="left">Tuvalu</td>
+                            <td align="left">Island</td>
+                        </tr>
+                        <tr>
+                            <td align="left">VUT</td>
+                            <td align="left">Vanuatu</td>
+                            <td align="left">Province</td>
+                        </tr>
+                        <tr>
+                            <td align="left">WLF</td>
+                            <td align="left">Wallis and Futuna</td>
+                            <td align="left">District</td>
+                        </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingEight">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEight" aria-expanded="false" aria-controls="collapseEight" id="how-sc1">
+                    How do I map my data to these regions?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseEight" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEight">
+                <div class="panel-body">
+                  <p>This layer can be used by including one of the column headings specific below in your data. There are a number of options depending on your preference.</p>
+                  <ul>
+                    <li><strong>SC1_CODE</strong> for non-country-specific use, eg you'd like to display data from multiple countries in a single csv.</li>
+                    <li><strong>{ISO3}_SC1_CODE</strong> eg ASM_SC1_CODE for Sub-Country 1 Codes in American Samoa.</li>
+                    <li><strong>{ISO3}_{LOCAL ADMIN TYPE}_CODE</strong> eg ASM_DISTRICT_CODE for Districts in American Samoa.</li>
+
+                    <li>Using the patterns above valid column headers are: <br/>
+                    SC1_CODE, ASM_SC1_CODE, ASM_DISTRICT_CODE, COK_SC1_CODE, COK_GROUP_OF_ISLANDS_CODE, FJI_SC1_CODE, FJI_DIVISION_CODE, PYF_SC1_CODE, PYF_ADMINISTRATIVE_SUBDIVISIONS_CODE, FSM_SC1_CODE, FSM_STATE_CODE, NRU_SC1_CODE, NRU_ISLAND_CODE, NCL_SC1_CODE, NCL_PROVINCE_CODE, MNP_SC1_CODE, MNP_ISLAND_CODE, PNG_SC1_CODE, PNG_PROVINCE_CODE, SLB_SC1_CODE, SLB_PROVINCE_CODE, TON_SC1_CODE, TON_DIVISION_CODE, TUV_SC1_CODE, TUV_ISLAND_CODE, VUT_SC1_CODE, VUT_PROVINCE_CODE, WLF_SC1_CODE, WLF_DISTRICT_CODE</li>
+                    
+                    <li>Note: We don't provide any option to map administrative boundaries using names as they as they sometimes are not unique across or within countries.</li>
+                  </ul>
+                  <a href="https://github.com/PacificCommunity/csv-geo-pacific/blob/master/documentation/subCountry1/Values.md" taraget="_blank"><button type="button" class="btn btn-default">Check valid values for regions</button></a>
+                  <button type="button" class="btn btn-primary" onclick="saveThisFile('https://raw.githubusercontent.com/PacificCommunity/csv-geo-pacific/master/documentation/subCountry1/sample.csv')">Download a sample CSV</button>
+                </div>
+              </div>
+            </div>
+
+            <h2>Sub-Country Boundaries Level 2</h2>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingNine">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseNine" aria-expanded="false" aria-controls="collapseNine" id="what-sc2">
+                    What boundaries are included?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseNine" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingNine">
+                <div class="panel-body">
+                  <p>The Sub-Country Boundaries Level 2 set provides an amalgamation of administrative boundaries that are approximately equivalent across countries.</p>
+                  <p>Countries across the Pacific use different administrative boundary structures and so there is no single consistent way to aggregate the information.</p>
+                  <p>Below is a list of the administrative boundaries available through this layer.</p>
+                  <a href="https://github.com/PacificCommunity/csv-geo-pacific/blob/master/documentation/subCountry1/Values.md" taraget="_blank"><button type="button" class="btn btn-default">Check valid values for regions</button></a>
+                  <button type="button" class="btn btn-primary" onclick="saveThisFile('https://raw.githubusercontent.com/PacificCommunity/csv-geo-pacific/master/documentation/subCountry2/sample.csv')">Download a sample CSV</button>
+
+                  <table id="LevelOfDetailSubCountry2" class="table">
+                      <caption>Level Of Detail - Sub-Country 2</caption>
+                      <thead>
+                          <tr>
+                              <th>ISO3 Code</th>
+                              <th>Country</th>
+                              <th>Boundary type</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td align="left">ASM</td>
+                              <td align="left">American Samoa</td>
+                              <td align="left">County</td>
+                          </tr>
+                          <tr>
+                              <td align="left">COK</td>
+                              <td align="left">Cook Islands</td>
+                              <td align="left">Island</td>
+                          </tr>
+                          <tr>
+                              <td align="left">FJI</td>
+                              <td align="left">Fiji</td>
+                              <td align="left">Province</td>
+                          </tr>
+                          <tr>
+                              <td align="left">PYF</td>
+                              <td align="left">French Polynesia</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">GUM</td>
+                              <td align="left">Guam</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">KIR</td>
+                              <td align="left">Kiribati</td>
+                              <td align="left">Island</td>
+                          </tr>
+                          <tr>
+                              <td align="left">MHL</td>
+                              <td align="left">Marshall Islands</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">FSM</td>
+                              <td align="left">Federated States of Micronesia</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">NRU</td>
+                              <td align="left">Nauru</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">NCL</td>
+                              <td align="left">New Caledonia</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">NIU</td>
+                              <td align="left">Niue</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">MNP</td>
+                              <td align="left">Northern Mariana Islands</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">PLW</td>
+                              <td align="left">Palau</td>
+                              <td align="left">State</td>
+                          </tr>
+                          <tr>
+                              <td align="left">PNG</td>
+                              <td align="left">Papua New Guinea</td>
+                              <td align="left">District</td>
+                          </tr>
+                          <tr>
+                              <td align="left">WSM</td>
+                              <td align="left">Samoa</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">SLB</td>
+                              <td align="left">Solomon Islands</td>
+                              <td align="left">Constituency</td>
+                          </tr>
+                          <tr>
+                              <td align="left">TKL</td>
+                              <td align="left">Tokelau</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">TON</td>
+                              <td align="left">Tonga</td>
+                              <td align="left">District</td>
+                          </tr>
+                          <tr>
+                              <td align="left">TUV</td>
+                              <td align="left">Tuvalu</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">VUT</td>
+                              <td align="left">Vanuatu</td>
+                              <td align="left">Island</td>
+                          </tr>
+                          <tr>
+                              <td align="left">WLF</td>
+                              <td align="left">Wallis and Futuna</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                      </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTen">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTen" aria-expanded="false" aria-controls="collapseTen" id="how-sc2">
+                    How do I map my data to these regions?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTen" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTen">
+                <div class="panel-body">
+                  <p>This layer can be used by including one of the column headings specific below in your data. There are a number of options depending on your preference.</p>
+                  <ul>
+                    <li><strong>SC2_CODE</strong> for non-country-specific use, eg you'd like to display data from multiple countries in a single csv.</li>
+                    <li><strong>{ISO3}_SC2_CODE</strong> eg ASM_SC2_CODE for Sub-Country 2 Codes in American Samoa.</li>
+                    <li><strong>{ISO3}_{LOCAL ADMIN TYPE}_CODE</strong> eg ASM_COUNTY_CODE for County's in American Samoa.</li>
+
+                    <li>Using the patterns above valid column headers are: <br/>
+                    SC2CODE, ASM_SC2_CODE, ASM_COUNTY_CODE, COK_SC2_CODE, COK_ISLAND_CODE, FJI_SC2_CODE, FJI_PROVINCE_CODE, KIR_SC2_CODE, KIR_ISLAND_CODE, PLW_SC2_CODE, PLW_STATE_CODE, PNG_SC2_CODE, PNG_DISTRICT_CODE, SLB_SC2_CODE, SLB_CONSTITUENCY_CODE,  TON_SC2_CODE, TON_DISTRICT_CODE, VUT_SC2_CODE, VUT_ISLAND_CODE
+                    </li>
+                    
+                    <li>Note: We don't provide any option to map administrative boundaries using names as they as they sometimes are not unique across or within countries.</li>
+                  </ul>
+                  <a href="https://github.com/PacificCommunity/csv-geo-pacific/blob/master/documentation/subCountry2/Values.md" taraget="_blank"><button type="button" class="btn btn-default">Check valid values for regions</button></a>
+                  <button type="button" class="btn btn-primary" onclick="saveThisFile('https://raw.githubusercontent.com/PacificCommunity/csv-geo-pacific/master/documentation/subCountry2/sample.csv')">Download a sample CSV</button>
+                </div>
+              </div>
+            </div>
+
+            <h2>Sub-Country Boundaries Level 3</h2>
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingEleven">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseEleven" aria-expanded="false" aria-controls="collapseEleven" id="what-sc3">
+                    What boundaries are included?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseEleven" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingEleven">
+                <div class="panel-body">
+                  <p>The Sub-Country Boundaries Level 3 set provides an amalgamation of administrative boundaries that are approximately equivalent across countries.</p>
+                  <p>Countries across the Pacific use different administrative boundary structures and so there is no single consistent way to aggregate the information.</p>
+                  <p>Below is a list of the administrative boundaries available through this layer.</p>
+                  <a href="https://github.com/PacificCommunity/csv-geo-pacific/blob/master/documentation/subCountry3/Values.md" taraget="_blank"><button type="button" class="btn btn-default">Check valid values for regions</button></a>
+                  <button type="button" class="btn btn-primary" onclick="saveThisFile('https://raw.githubusercontent.com/PacificCommunity/csv-geo-pacific/master/documentation/subCountry3/sample.csv')">Download a sample CSV</button>
+                
+                  <table id="LevelOfDetailSubCountry3" class="table">
+                      <caption>Level Of Detail - Sub-Country 3</caption>
+                      <thead>
+                          <tr>
+                              <th>ISO3 Code</th>
+                              <th>Country</th>
+                              <th>Boundary type</th>
+                          </tr>
+                      </thead>
+                      <tbody>
+                          <tr>
+                              <td align="left">ASM</td>
+                              <td align="left">American Samoa</td>
+                              <td align="left">Village</td>
+                          </tr>
+                          <tr>
+                              <td align="left">COK</td>
+                              <td align="left">Cook Islands</td>
+                              <td align="left">Census District</td>
+                          </tr>
+                          <tr>
+                              <td align="left">FJI</td>
+                              <td align="left">Fiji</td>
+                              <td align="left">Tikina</td>
+                          </tr>
+                          <tr>
+                              <td align="left">PYF</td>
+                              <td align="left">French Polynesia</td>
+                              <td align="left">N/A</td>
+                          </tr>
+                          <tr>
+                              <td align="left">GUM</td>
+                              <td align="left">Guam</td>
+                              <td align="left">Municipality</td>
+                          </tr>
+                          <tr>
+                              <td align="left">KIR</td>
+                              <td align="left">Kiribati</td>
+                              <td align="left">Village</td>
+                          </tr>
+                          <tr>
+                              <td align="left">MHL</td>
+                              <td align="left">Marshall Islands</td>
+                              <td align="left">Atoll</td>
+                          </tr>
+                          <tr>
+                              <td align="left">FSM</td>
+                              <td align="left">Federated States of Micronesia</td>
+                              <td align="left">Municipality</td>
+                          </tr>
+                          <tr>
+                              <td align="left">NRU</td>
+                              <td align="left">Nauru</td>
+                              <td align="left">District</td>
+                          </tr>
+                          <tr>
+                              <td align="left">NCL</td>
+                              <td align="left">New Caledonia</td>
+                              <td align="left">Commune</td>
+                          </tr>
+                          <tr>
+                              <td align="left">NIU</td>
+                              <td align="left">Niue</td>
+                              <td align="left">Village</td>
+                          </tr>
+                          <tr>
+                              <td align="left">MNP</td>
+                              <td align="left">Northern Mariana Islands</td>
+                              <td align="left">Village</td>
+                          </tr>
+                          <tr>
+                              <td align="left">PLW</td>
+                              <td align="left">Palau</td>
+                              <td align="left">Hamlet</td>
+                          </tr>
+                          <tr>
+                              <td align="left">PNG</td>
+                              <td align="left">Papua New Guinea</td>
+                              <td align="left">Local Level Government Areas</td>
+                          </tr>
+                          <tr>
+                              <td align="left">WSM</td>
+                              <td align="left">Samoa</td>
+                              <td align="left">District</td>
+                          </tr>
+                          <tr>
+                              <td align="left">SLB</td>
+                              <td align="left">Solomon Islands</td>
+                              <td align="left">Ward</td>
+                          </tr>
+                          <tr>
+                              <td align="left">TKL</td>
+                              <td align="left">Tokelau</td>
+                              <td align="left">Atoll</td>
+                          </tr>
+                          <tr>
+                              <td align="left">TON</td>
+                              <td align="left">Tonga</td>
+                              <td align="left">Village</td>
+                          </tr>
+                          <tr>
+                              <td align="left">TUV</td>
+                              <td align="left">Tuvalu</td>
+                              <td align="left">Village</td>
+                          </tr>
+                          <tr>
+                              <td align="left">VUT</td>
+                              <td align="left">Vanuatu</td>
+                              <td align="left">Area Council</td>
+                          </tr>
+                          <tr>
+                              <td align="left">WLF</td>
+                              <td align="left">Wallis and Futuna</td>
+                              <td align="left">Village</td>
+                          </tr>
+                      </tbody>
+                  </table>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="panel panel-default">
+              <div class="panel-heading" role="tab" id="headingTwelve">
+                <h4 class="panel-title">
+                  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwelve" id="how-sc3">
+                    How do I map my data to these regions?
+                  </a>
+                </h4>
+              </div>
+              <div id="collapseTwelve" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwelve">
+                <div class="panel-body">
+                  <p>This layer can be used by including one of the column headings specific below in your data. There are a number of options depending on your preference.</p>
+                  <ul>
+                    <li><strong>SC3_CODE</strong> for non-country-specific use, eg you'd like to display data from multiple countries in a single csv.</li>
+                    <li><strong>{ISO3}_SC3_CODE</strong> eg ASM_SC3_CODE for Sub-Country 3 Codes in American Samoa.</li>
+                    <li><strong>{ISO3}_{LOCAL ADMIN TYPE}_CODE</strong> eg ASM_VILLAGE_CODE for Villages in American Samoa.</li>
+
+                    <li>Using the patterns above valid column headers are: <br/>
+                    SC3_CODE, ASM_SC3_CODE, ASM_VILLAGE_CODE, COK_SC3_CODE, COK_CENSUS_DISTRICT_CODE, FJI_SC3_CODE, FJI_TIKINA_CODE, GUM_SC3_CODE, GUM_MUNICIPALITY_CODE, KIR_SC3_CODE, KIR_VILLAGE_CODE,MHL_SC3_CODE, MHL_ATOLL_CODE, FSM_SC3_CODE, FSM_MUNICIPALITY_CODE, NRU_SC3_CODE, NRU_DISTRICT_CODE, NCL_SC3_CODE, NCL_COMMUNE_CODE, NIU_SC3_CODE,NIU_VILLAGE_CODE, MNP_SC3_CODE, MNP_VILLAGE_CODE, PLW_SC3_CODE, PLW_HAMLET_CODE, PNG_SC3_CODE, PNG_LOCAL_LEVEL_GOVERNMENT_AREAS_CODE, WSM_SC3_CODE, WSM_DISTRICT_CODE, SLB_SC3_CODE, SLB_WARD_CODE, TKL_SC3_CODE, TKL_ATOLL_CODE, TON_SC3_CODE, TON_VILLAGE_CODE, TUV_SC3_CODE,  TUV_VILLAGE_CODE, VUT_SC3_CODE, VUT_AREA_COUNCIL_CODE, WLF_SC3_CODE, WLF_VILLAGE_CODE
+                    </li>
+                    
+                    <li>Note: We don't provide any option to map administrative boundaries using names as they as they sometimes are not unique across or within countries.</li>
+                  </ul>
+                  <a href="https://github.com/PacificCommunity/csv-geo-pacific/blob/master/documentation/subCountry3/Values.md" taraget="_blank"><button type="button" class="btn btn-default">Check valid values for regions</button></a>
+                  <button type="button" class="btn btn-primary" onclick="saveThisFile('https://raw.githubusercontent.com/PacificCommunity/csv-geo-pacific/master/documentation/subCountry3/sample.csv')">Download a sample CSV</button>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div> 
+    </div>
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">&copy; Department of the Prime Minister and Cabinet, Department of Communications, and National ICT Australia Limited (NICTA) 2014-2015. All Rights Reserved.</p>
+        <p><strong><a href="../about.html#terms">Terms and conditions</a></strong> – <strong><a href="privacy.html">Privacy</a></strong></p>
+      </div>
+    </footer>
+
+    <script>
+      function saveThisFile(url) {
+        this.saveAs(url, "sample.csv");
+      }
+    </script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/filesaver.js"></script>
+
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
