@@ -15,7 +15,8 @@
             "co_id",
             "CO_ID",
             "COUNTRY_ID",
-            "SPC_COUNTRY_ID"
+            "SPC_COUNTRY_ID",
+            "SPC_AREA"
           ],
           "description": "SPC EEC by code",
           "bbox": [
@@ -56,7 +57,7 @@
         "SC1": {
           "layerName": "SC1",
           "description": "Sub national boundaries (level 1) across the south pacific",
-          "server": "https://tile-test.terria.io/SC1/{z}/{x}/{y}.pbf",
+          "server": "https://tiles.terria.io/SC1/{z}/{x}/{y}.pbf",
           "serverType": "MVT",
           "serverMaxNativeZoom": 12,
           "serverMinZoom": 0,
@@ -106,7 +107,7 @@
         "SC2": {
           "layerName": "SC2",
           "description": "Sub national boundaries (level 2) across the south pacific",
-          "server": "https://tile-test.terria.io/SC2/{z}/{x}/{y}.pbf",
+          "server": "https://tiles.terria.io/SC2/{z}/{x}/{y}.pbf",
           "serverType": "MVT",
           "serverMaxNativeZoom": 12,
           "serverMinZoom": 0,
@@ -146,7 +147,7 @@
         "SC3": {
           "layerName": "SC3",
           "description": "Sub national boundaries (level 3) across the south pacific",
-          "server": "https://tile-test.terria.io/SC3/{z}/{x}/{y}.pbf",
+          "server": "https://tiles.terria.io/SC3/{z}/{x}/{y}.pbf",
           "serverType": "MVT",
           "serverMaxNativeZoom": 12,
           "serverMinZoom": 0,
@@ -199,9 +200,9 @@
             "WLF_VILLAGE_CODE"
           ],
           "bbox": [
-            130,
-            -27,
-            220,
+            -179.9975,
+            -30.930209,
+            179.992727,
             35
           ]
         }
