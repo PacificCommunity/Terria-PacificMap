@@ -24,7 +24,8 @@
             "includeEsriFeatureServer": true,
             "filterByWmsGetCapabilities": false,
             "minimumMaxScaleDenominator": 1e10,
-            "wmsParameters": {"tiled" : true}
+            "wmsParameters": {"tiled" : true},
+            "useCombinationNameWhereMultipleResources": true
         },
         {
           "name": "Sustainable Development Goals",
@@ -81,6 +82,13 @@
                   <% include spc/sdg_table_style %>
                 }
             ]
+        },
+        {
+          "name": "Corona Virus - Cases",
+          "description": "<p>Current situation for the Novel Coronavirus Cases starting from Wuhan, China.</p> <p>Data and web service provided by the Johns Hopkins University Center for Systems Science and Engineering. Click <a href='https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6'>here</a> for the official Johns Hopkins CSSE dashboard.</p>",
+          "type": "esri-featureServer",
+          "url": "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases/FeatureServer/1",
+          "useStyleInformationFromService": true
         },
         {
             "name": "Marine Pollution",
