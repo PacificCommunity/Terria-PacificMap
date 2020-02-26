@@ -28,7 +28,8 @@
       "minimumMaxScaleDenominator": 10000000000,
       "wmsParameters": {
         "tiled": true
-      }
+      },
+      "useCombinationNameWhereMultipleResources": true
     },
     {
       "name": "Sustainable Development Goals",
