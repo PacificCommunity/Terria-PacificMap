@@ -6,6 +6,10 @@
     "north": 10
   },
   "services": [],
+  "corsDomains": [
+    "pacificdata.org",
+    "arcgis.com"
+  ],
   "catalog": [
     {
       "name": "Pacific Hub Datasets",

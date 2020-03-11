@@ -12,6 +12,10 @@
             text: "Disclaimer: This map must not be used for navigation or precise spatial analysis",
             url: ""
         },
+        "initFragmentPaths": [
+            "/proxy/_0s/https://terria-apps.s3-ap-southeast-2.amazonaws.com/pacific-map/",
+            "init/"
+        ],
         /*
         // Text that will be added to any pages printed from your site.
         printDisclaimer:{
