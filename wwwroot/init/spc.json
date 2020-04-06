@@ -17,7 +17,7 @@
       "url": "https://pacificdata.org/data",
       "filterQuery": [
         {
-          "fq": "+(res_format:(geojson OR GeoJSON OR CSV-GEO-PACIFIC OR csv-geo-pacific OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\"))"
+          "fq": "+(res_format:(geojson OR GeoJSON OR CSV-GEO-PACIFIC OR csv-geo-pacific OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\" OR \"tile service\"))"
         }
       ],
       "groupBy": "organization",
@@ -28,6 +28,7 @@
       "includeWfs": true,
       "includeEsriMapServer": true,
       "includeEsriFeatureServer": true,
+      "esriMapServerResourceFormat": "^tile service$",
       "filterByWmsGetCapabilities": false,
       "minimumMaxScaleDenominator": 10000000000,
       "wmsParameters": {

@@ -1,52 +1,90 @@
 {
     "comments": "Matching takes place in the order defined in this file. Place code matches before name matches, and smaller regions before larger ones.",
     "regionWmsMap": {
-        "SPC_EEC_CODE": {
-          "layerName": "SPC_EEC",
-          "server": "https://tile-test.terria.io/SPC_EEC/{z}/{x}/{y}.pbf",
+        "COUNTRY_ISO3": {
+            "server": "https://vector-tiles.terria.io/FID_TM_WORLD_BORDERS/{z}/{x}/{y}.pbf",
+            "regionProp": "ISO3",
+            "aliases": [
+                "country_iso3",
+                "ISO3",
+                "iso3"
+            ],
+            "digits": 3,
+            "textCodes": true,
+            "regionIdsFile": "data/regionids/region_map-FID_TM_WORLD_BORDERS_ISO3.json",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxNativeZoom": 10,
+            "serverMaxZoom": 28,
+            "bbox": [
+                -179.99999999999994,
+                -85.05109999999998,
+                179.99999999999994,
+                83.62359600000005
+            ],
+            "nameProp": "NAME"
+        },
+        "COUNTRY": {
+            "server": "https://vector-tiles.terria.io/FID_TM_WORLD_BORDERS/{z}/{x}/{y}.pbf",
+            "regionProp": "NAME",
+            "textCodes": true,
+            "aliases": [
+                "COUNTRY_NAME",
+                "country_name",
+                "country"
+            ],
+            "regionIdsFile": "data/regionids/region_map-FID_TM_WORLD_BORDERS_NAME.json",
+            "serverType": "MVT",
+            "serverMinZoom": 0,
+            "serverMaxNativeZoom": 10,
+            "serverMaxZoom": 28,
+            "bbox": [
+                -179.99999999999994,
+                -85.05109999999998,
+                179.99999999999994,
+                83.62359600000005
+            ],
+            "nameProp": "NAME"
+        },
+        "ISO2_EEZ_CODE": {
+          "layerName": "EEZ",
+          "server": "https://tile-test.terria.io/EEZ/{z}/{x}/{y}.pbf",
           "serverType": "MVT",
-          "serverMaxNativeZoom": 12,
+          "serverMaxNativeZoom": 10,
           "serverMinZoom": 0,
           "serverMaxZoom": 28,
-          "regionIdsFile": "/data/regionids/region_map-SPC_EEC_CODE_SPC_EEC.json",
-          "regionProp": "country_id",
-          "nameProp": "country_name",
+          "regionIdsFile": "/data/regionids/region_map-ISO2_EEZ_CODE_EEZ.json",
+          "regionProp": "ISO2_CODE",
+          "nameProp": "COUNTRY",
           "aliases": [
-            "co_id",
-            "CO_ID",
-            "COUNTRY_ID",
             "SPC_COUNTRY_ID",
+            "REF_AREA",
             "SPC_AREA"
           ],
-          "description": "SPC EEC by code",
+          "description": "EEZ boundaries by ISO2 code",
           "bbox": [
             -179.9975,
-            -30.930209,
+            -90,
             179.992727,
-            23.774728
+            90
           ]
         },
-        "SPC_EEC_NAME": {
-          "layerName": "SPC_EEC",
-          "server": "https://tile-test.terria.io/SPC_EEC/{z}/{x}/{y}.pbf",
+        "EEZ_NAME": {
+          "layerName": "EEZ",
+          "server": "https://tile-test.terria.io/EEZ/{z}/{x}/{y}.pbf",
           "serverType": "MVT",
-          "serverMaxNativeZoom": 12,
+          "serverMaxNativeZoom": 10,
           "serverMinZoom": 0,
           "serverMaxZoom": 28,
-          "regionIdsFile": "/data/regionids/region_map-SPC_EEC_NAME_SPC_EEC.json",
-          "regionProp": "country",
-          "nameProp": "country",
+          "regionIdsFile": "/data/regionids/region_map-EEZ_NAME_EEZ.json",
+          "regionProp": "COUNTRY",
+          "nameProp": "COUNTRY",
           "aliases": [
-            "coname",
-            "CO_NAME",
-            "country_name",
-            "COUNTRY_NAME",
-            "COUNTRY",
-            "Countries",
-            "SPC_COUNTRY",
-            "SPC_COUNTRY_NAME"
+            "EEZ_COUNTRY_NAME",
+            "EEZ_COUNTRY",
+            "Countries"
           ],
-          "description": "SPC EEC by name",
+          "description": "EEZ boundaries by name",
           "bbox": [
             -179.9975,
             -30.930209,
