@@ -7,6 +7,10 @@
         googleUrlShortenerKey: null,
         googleAnalyticsKey: "",
         googleAnalyticsOptions: null,
+
+        // Log ConsoleAnalytics events to console
+        // logToConsole: true,
+
         /* Text that appears at the bottom of the map */
         disclaimer: {
             text: "Disclaimer: This map must not be used for navigation or precise spatial analysis",
@@ -23,7 +27,7 @@
             url: "#"
         },
         */
-         
+
         // Pop-up disclaimer that will be shown at the start
         // The text of the disclaimer is in lib/Views/GlobalDisclaimer.html
         // globalDisclaimer: {
@@ -36,7 +40,7 @@
         //     //devHostRegex: "\\b(staging|preview|test|dev)\\.",
         //     enableOnLocalhost: true // If false, don't show this when running on localhost
         // },
-        
+
         /*
         developerAttribution: {
             text: "Your organisation",

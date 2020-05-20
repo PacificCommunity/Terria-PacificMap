@@ -1,26 +1,34 @@
-@import '~terriajs/lib/Sass/common/_variables.scss';
+@import "~terriajs/lib/Sass/common/_variables.scss";
 
 // To customise the look of your map, uncomment and change values here and in lib/Views/global.scss
-
 
 // If your logo is big, set this to give it more room.
 //$logo-height: 120px;
 
 // If using a non-standard font, remember to include an @import statement in global.scss
-$font-base: 'Montserrat', sans-serif; 
+$font-base: "Montserrat", sans-serif;
 $font-pop: $font-base; // If you just want to use one font throughout, do this.
 
 // These variables are for buttons and text.
 // "color-secondary" should be a lighter color than "color-primary" but still readable contrasted with white.
-$color-primary: #007AD8;
-$color-secondary: lighten($color-primary, 20%); // or: lighten($color-primary, 20%);
+$color-primary: #007ad8;
+$color-secondary: lighten(
+  $color-primary,
+  20%
+); // or: lighten($color-primary, 20%);
 
 // These variables set background panel colors
-$dark: #33404A;
+$dark: #33404a;
 $dark-with-overlay: lighten($dark, 20%);
 $dark-lighter: lighten($dark, 50%);
 
 // You might find it helpful to define these and use them.
-$color-primary-light:lighten($color-primary,10%);
-$color-primary-dark:darken($color-primary,10%);
-$dark-darker: #33404A;
+$color-primary-light: lighten($color-primary, 10%);
+$color-primary-dark: darken($color-primary, 10%);
+$dark-darker: #33404a;
+
+$focus-border-light-color: $text-light;
+$focus-border-dark-color: $text-dark;
+$focus-border-width: 2px;
+$focus-border: solid $focus-border-width $focus-border-light-color;
+$focus-border-dark: solid $focus-border-width $focus-border-dark-color;
