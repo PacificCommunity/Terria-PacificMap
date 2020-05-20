@@ -18,11 +18,7 @@ body {
   // You will also want to uncomment and change values in lib/Styles/variables.scss
 
   // Import any custom fonts here
-  @import url(
-    https://fonts.googleapis.com/css?family=Montserrat:300,
-    400,
-    700&display=swap
-  );
+  @import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap");
 
   html {
     font-family: $font-base;
