@@ -1,7 +1,7 @@
 {
     /* Names of init files (in wwwroot/init), without the .json extension, to load by default */
     initializationUrls: [
-        "spc"
+        "spc-v8"
     ],
     parameters: {
         googleUrlShortenerKey: null,

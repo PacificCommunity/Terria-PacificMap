@@ -1,0 +1,220 @@
+{
+  "catalog": [
+    {
+      "type": "ckan-group",
+      "name": "Pacific Hub Datasets",
+      "url": "https://pacificdata.org/data",
+      "filterQuery": [
+        {
+          "fq": "+(res_format:(geojson OR GeoJSON OR CSV-GEO-PACIFIC OR csv-geo-pacific OR kml OR KML OR kmz OR KMZ OR wms OR WMS OR \"Esri REST\" OR \"tile service\"))"
+        }
+      ],
+      "groupBy": "organization",
+      "useCombinationNameWhereMultipleResources": true,
+      "supportedResourceFormats": [
+        {
+          "id": "ArcGIS FeatureServer",
+          "formatRegex": "^tile service$"
+        },
+        {
+          "id": "WMS",
+          "definition": {
+            "type": "wms",
+            "parameters": {
+              "tiled": true
+            }
+          }
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "name": "Sustainable Development Goals",
+      "members": [
+        {
+          "type": "csv",
+          "name": "3.1.1. Maternal Mortality Ratio",
+          "url": "/data/MaternalMortalityRatio.csv",
+          "columns": [
+            {
+              "name": "NATURE",
+              "type": "hidden"
+            },
+            {
+              "name": "SOURCE_DETAIL",
+              "type": "hidden"
+            },
+            {
+              "name": "REPORTING_TYPE",
+              "type": "hidden"
+            },
+            {
+              "name": "SDG_UNIT_MEASURE",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "type": "csv",
+          "name": "3.1.2 Births attended by skilled health personnel Ratio",
+          "url": "/data/BirthsAttendedSkilled.csv",
+          "columns": [
+            {
+              "name": "NATURE",
+              "type": "hidden"
+            },
+            {
+              "name": "SOURCE_DETAIL",
+              "type": "hidden"
+            },
+            {
+              "name": "REPORTING_TYPE",
+              "type": "hidden"
+            },
+            {
+              "name": "SDG_UNIT_MEASURE",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "type": "csv",
+          "name": "3.3.2 Tuberculosis incidence Ratio",
+          "url": "/data/TbIncidence.csv",
+          "columns": [
+            {
+              "name": "NATURE",
+              "type": "hidden"
+            },
+            {
+              "name": "SOURCE_DETAIL",
+              "type": "hidden"
+            },
+            {
+              "name": "REPORTING_TYPE",
+              "type": "hidden"
+            },
+            {
+              "name": "SDG_UNIT_MEASURE",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "type": "csv",
+          "name": "3.d.1 International Health Regulations (IHR) core capacity index",
+          "url": "/data/IhrCapacity.csv",
+          "columns": [
+            {
+              "name": "NATURE",
+              "type": "hidden"
+            },
+            {
+              "name": "SOURCE_DETAIL",
+              "type": "hidden"
+            },
+            {
+              "name": "REPORTING_TYPE",
+              "type": "hidden"
+            },
+            {
+              "name": "SDG_UNIT_MEASURE",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "type": "csv",
+          "name": "15.1.1 Land area covered by forest",
+          "url": "/data/ForestCover.csv",
+          "columns": [
+            {
+              "name": "NATURE",
+              "type": "hidden"
+            },
+            {
+              "name": "SOURCE_DETAIL",
+              "type": "hidden"
+            },
+            {
+              "name": "REPORTING_TYPE",
+              "type": "hidden"
+            },
+            {
+              "name": "SDG_UNIT_MEASURE",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "type": "csv",
+          "name": "15.5.1 Red List Index",
+          "url": "/data/RedListIndex.csv",
+          "columns": [
+            {
+              "name": "NATURE",
+              "type": "hidden"
+            },
+            {
+              "name": "SOURCE_DETAIL",
+              "type": "hidden"
+            },
+            {
+              "name": "REPORTING_TYPE",
+              "type": "hidden"
+            },
+            {
+              "name": "SDG_UNIT_MEASURE",
+              "type": "hidden"
+            }
+          ]
+        },
+        {
+          "type": "csv",
+          "name": "16.9.1 Proportion of births registered with a civil authority",
+          "url": "/data/BirthsRegistered.csv",
+          "columns": [
+            {
+              "name": "NATURE",
+              "type": "hidden"
+            },
+            {
+              "name": "SOURCE_DETAIL",
+              "type": "hidden"
+            },
+            {
+              "name": "REPORTING_TYPE",
+              "type": "hidden"
+            },
+            {
+              "name": "SDG_UNIT_MEASURE",
+              "type": "hidden"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "esri-featureServer",
+      "name": "Corona Virus - Cases",
+      "description": "<p>Current situation for the Novel Coronavirus Cases starting from Wuhan, China.</p> <p>Data and web service provided by the Johns Hopkins University Center for Systems Science and Engineering. Click <a href='https://gisanddata.maps.arcgis.com/apps/opsdashboard/index.html#/bda7594740fd40299423467b48e9ecf6'>here</a> for the official Johns Hopkins CSSE dashboard.</p>",
+      "url": "https://services1.arcgis.com/0MSEUqKaxRlEPj5g/ArcGIS/rest/services/ncov_cases/FeatureServer/1",
+      "useStyleInformationFromService": true
+    },
+    {
+      "type": "csv",
+      "name": "Marine Pollution",
+      "url": "https://pacific-data.sprep.org/system/files/ENV_Marine_Pollution_Obs_data_v4.csv"
+    }
+  ],
+  "corsDomains": [
+    "pacificdata.org",
+    "arcgis.com"
+  ],
+  "homeCamera": {
+    "west": 130,
+    "south": -27,
+    "east": 220,
+    "north": 10
+  }
+}
