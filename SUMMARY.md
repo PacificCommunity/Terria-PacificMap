@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Terria Map \(Test\)](README.md)
+* [Terria Map](README.md)
 * [Change Log](changes.md)
 * [LICENSE](license.md)
 * [deploy](deploy/README.md)

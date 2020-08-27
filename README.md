@@ -1,4 +1,4 @@
-# Terria Map \(Test\)
+# Terria Map
 
 ![Terria logo](.gitbook/assets/terria-logo.png)
 
