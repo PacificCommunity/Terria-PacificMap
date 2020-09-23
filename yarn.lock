@@ -8524,10 +8524,6 @@ pbkdf2@^3.0.3:
     safe-buffer "^5.0.1"
     sha.js "^2.4.8"
 
-"pell@git://github.com/TerriaJS/pell#master":
-  version "1.0.6"
-  resolved "git://github.com/TerriaJS/pell#7cd23a55cdfd130fedf3679433991bb7d958fc42"
-
 "pell@git://github.com/TerriaJS/pell.git#master":
   version "1.0.6"
   resolved "git://github.com/TerriaJS/pell.git#7cd23a55cdfd130fedf3679433991bb7d958fc42"
@@ -9520,14 +9516,6 @@ regex-parser@2.2.10:
   version "2.2.10"
   resolved "https://registry.yarnpkg.com/regex-parser/-/regex-parser-2.2.10.tgz#9e66a8f73d89a107616e63b39d4deddfee912b37"
   integrity sha512-8t6074A68gHfU8Neftl0Le6KTDwfGAj7IyjPIMSfikI2wJUTHDMaIq42bUsfVnj8mhx0R+45rdUXHGpN164avA==
-
-regexp.prototype.flags@^1.3.0:
-  version "1.3.0"
-  resolved "https://registry.yarnpkg.com/regexp.prototype.flags/-/regexp.prototype.flags-1.3.0.tgz#7aba89b3c13a64509dabcf3ca8d9fbb9bdf5cb75"
-  integrity sha512-2+Q0C5g951OlYlJz6yu5/M33IcsESLlLfsyIaLJaG4FA2r4yP8MvVMJUUP/fVBkSpbbbZlS5gynbEWLipiiXiQ==
-  dependencies:
-    define-properties "^1.1.3"
-    es-abstract "^1.17.0-next.1"
 
 regexp.prototype.flags@^1.3.0:
   version "1.3.0"
@@ -10953,13 +10941,6 @@ terriajs-cesium@1.71.3:
   dependencies:
     dompurify "^2.0.7"
 
-terriajs-cesium@1.68.0:
-  version "1.68.0"
-  resolved "https://registry.yarnpkg.com/terriajs-cesium/-/terriajs-cesium-1.68.0.tgz#17a794fa8b01eb1ee38d89a5707f0423d65d6bd5"
-  integrity sha512-zrV1/rJqeRwpGfwZD/Oo1VdQAb9vS3+XQALE6FKizH328UVeNqC4aiQz2FcgFqO6I2KrvsvY7/i04bK9BzQcSQ==
-  dependencies:
-    dompurify "^2.0.7"
-
 terriajs-html2canvas@1.0.0-alpha.12-terriajs-1:
   version "1.0.0-alpha.12-terriajs-1"
   resolved "https://registry.yarnpkg.com/terriajs-html2canvas/-/terriajs-html2canvas-1.0.0-alpha.12-terriajs-1.tgz#592a7fddcccbef3657f2a5259f283d56245f5b5a"
@@ -11013,10 +10994,10 @@ terriajs-server@^3.0.1:
     when "^3.7.7"
     yargs "^13.2.4"
 
-terriajs@8.0.0-alpha.46:
-  version "8.0.0-alpha.46"
-  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-8.0.0-alpha.46.tgz#3ee3ce1d9fad244edb62e8aea7757177b9708d0b"
-  integrity sha512-WIZu/bzyKNKh8BCU1AGL0F62c1Ao9uHGq8r1MUwDLA6uBIEVkIULLghiOnTt/bbtibdFkEInCw+TAATtTdxs1A==
+terriajs@8.0.0-alpha.50:
+  version "8.0.0-alpha.50"
+  resolved "https://registry.yarnpkg.com/terriajs/-/terriajs-8.0.0-alpha.50.tgz#823c6333f12646910aeb7be9c0a993877c6ebbfa"
+  integrity sha512-2XY4+69QWaKvXUzTbtHdpQTTaEtWpkkm8fIXLPVAv3V3Hmv4IBm+Z3D6MwjgBvlEDkEyeaEhau4DZhMfF9wA1Q==
   dependencies:
     "@babel/core" "^7.3.3"
     "@babel/plugin-proposal-decorators" "^7.10.4"
