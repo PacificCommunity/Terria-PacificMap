@@ -28,6 +28,18 @@
       ]
     },
     {
+      "type": "sdmx-group",
+      "name": "Pacific Data Hub (.Stat)",
+      "url": "https://stats-nsi-stable.pacificdata.org/rest",
+      "conceptOverrides": [
+        {
+          "id": "urn:sdmx:org.sdmx.infomodel.conceptscheme.Concept=SPC:CS_COMMON(2.0).GEO_PICT",
+          "type": "region",
+          "regionType": "ISO2_EEZ_CODE"
+        }
+      ]
+    },
+    {
       "type": "group",
       "name": "Sustainable Development Goals",
       "members": [
