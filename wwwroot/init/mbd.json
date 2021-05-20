@@ -1,0 +1,26 @@
+{
+  "elements": {
+    "show-workbench": {"visible": false},
+    "map-data-count": {"visible": false},
+    "help": {"visible": false},
+    "menu-bar": {"visible": false},
+    "map-navigation": {"visible": true},
+    "compass": {"visible": false},
+    "zoom": {"visible": true},
+    "my-location": {"visible": false},
+    "split-tool": {"visible": false},
+    "about-link": {"visible": false},
+    "measure-tool": {"visible": false},
+    "feedback": {"visible": false},
+
+    "related-maps": {"visible": false}
+  },
+  "homeCamera": {
+    "west": 109,
+    "south": -45,
+    "east": 158,
+    "north": -8
+  },
+  "services": [],
+  "catalog": [  ]
+}
